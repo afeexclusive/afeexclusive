@@ -43,7 +43,8 @@ const Greetings = () => {
                       <h1 className="display-3 text-white">
                         {greetings.title + " "}
                       </h1>
-                      <p className="lead text-white">{greetings.description}</p>
+                      <p className="lead text-white d-none">{greetings.descriptionLess}</p>
+                      <p className="lead text-white d-block">{greetings.description}</p>
                       <SocialLinks />
                       <div className="btn-wrapper my-4">
                         <Button

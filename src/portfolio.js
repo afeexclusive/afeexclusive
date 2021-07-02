@@ -5,10 +5,11 @@ import github from './assets/img/icons/common/github.svg'
 import airbnb from './assets/img/icons/common/airbnbLogo.png'
 
 export const greetings = {
-    "name": "Hanzla Tauqeer",
-    "title": "Hi all, I'm Hanzla",
-    "description": "A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Python / Django / Flask and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.",
-    "resumeLink": "https://cv.hanzla.ga"
+    "name": "Afe Ayokunle",
+    "title": "Welcome here, I'm Ayokunle",
+    "descriptionLess": "A software engineer with a PASSION for developing efficient and innovative solutions that speed up organizational success. Well-versed in writing code to create systems that are reliable and user-friendly. In leading roles I have proven ability to motivate, educate, and manage a team of professionals to build software programs and effectively track changes.",
+    "description": "A software engineer with a PASSION for developing efficient and innovative solutions that speed up organizational success. Well-versed in writing code to create systems that are reliable and user-friendly. In leading roles I have proven ability to motivate, educate, and manage a team of professionals to build software programs and effectively track changes. Confident communicator(selling the organization goals to team members), strategic thinking that lead to solid and convincing product designs, and innovative creator to develop software that is customized to meet a company’s organizational needs.",
+    "resumeLink": "https://docs.google.com/document/d/1yW5yb9Q8g9AlkOVgPdTOm3AdbotnNSnF9YDzbQy8Bbw/edit?usp=sharing"
 }
 
 export const openSource = {
@@ -59,8 +60,8 @@ export const skillsSection = {
       },
       
       {
-        skillName: 'azure',
-        fontAwesomeClassname: 'logos:windows',
+        skillName: 'Azure',
+        fontAwesomeClassname: 'logos:microsoft',
       },
       // {
       //   skillName: 'TypeScript',

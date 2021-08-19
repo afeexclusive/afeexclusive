@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <title>Pay</title>
+</head>
+<body onload="payWithPaystack()">
+    
+    <!-- has to be placed below the html form -->
+    <script>
+        function payWithPaystack(){
+            const queryString = window.location.search;
+            console.log('query', queryString);
+            const urlParams = new URLSearchParams(queryString);
+
+        var handler = PaystackPop.setup({
+            key: 'pk_test_4f9edea4fecc1b86800f03dc852647f639fb4819',
+            email: urlParams.get('email'),
+            amount: urlParams.get('amount'),
+            ref: urlParams.get('ref'),
+            metadata: {
+            custom_fields: [
+                {
+                    display_name: "Mobile Number",
+                    variable_name: "mobile_number",
+                    value: urlParams.get('phone')
+                }
+            ]
+            },
+            callback: function(response){
+                setTimeout(function(){}, 5000);
+            },
+            onClose: function(){
+                setTimeout(function(){}, 5000);
+                //alert('window closed');
+            }
+        });
+        handler.openIframe();
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay</title>
+</head>
+<body>
+    <form>
+        <script src="https://js.paystack.co/v1/inline.js"></script>
+        <button type="button" onclick="payWithPaystack()"> Pay </button> 
+      </form> -->
+      <!-- has to be placed below the html form -->
+        <!-- <script>
+            // function payWithPaystack(){
+            //     const queryString = window.location.search;
+            //     console.log('query', queryString);
+            //     const urlParams = new URLSearchParams(queryString);
+
+            // var handler = PaystackPop.setup({
+            //     key: 'pk_test_4f9edea4fecc1b86800f03dc852647f639fb4819',
+            //     email: urlParams.get('email'),
+            //     amount: urlParams.get('amount'),
+            //     ref: urlParams.get('ref'),
+            //     metadata: {
+            //     custom_fields: [
+            //         {
+            //             display_name: "Mobile Number",
+            //             variable_name: "mobile_number",
+            //             value: urlParams.get('phone')
+            //         }
+            //     ]
+            //     },
+            //     callback: function(response){
+            //         setTimeout(function(){}, 5000);
+            //     },
+            //     onClose: function(){
+            //         setTimeout(function(){}, 5000);
+            //         //alert('window closed');
+            //     }
+            // });
+            // handler.openIframe();
+            // }
+        </script> -->
+  
+<!-- </body>
+</html> -->

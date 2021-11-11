@@ -1,8 +1,8 @@
 import emoji from 'react-easy-emoji';
 
-import googlelogo from './assets/img/icons/common/google.svg'
-import github from './assets/img/icons/common/github.svg'
-import airbnb from './assets/img/icons/common/airbnbLogo.png'
+import ietechlogo from './assets/img/icons/common/ietech.png'
+import churchpluslogo from './assets/img/icons/common/churchplus.png'
+import code30logo from './assets/img/icons/common/Code360.jpg'
 
 export const greetings = {
     "name": "Afe Ayokunle",
@@ -21,11 +21,10 @@ export const contact = {
 }
 
 export const socialLinks = {
-    "facebook": "https://www.facebook.com/1hanzla100",
-    "instagram": "https://www.instagram.com/1hanzla100",
-    "twitter": "https://twitter.com/1hanzla100",
-    "github": "https://github.com/1hanzla100",
-    "linkedin": "https://www.linkedin.com/in/hanzla-tauqeer-0869281ba/"
+  "gmail": "mailto:afeexclusive@gmail.com",
+  "facebook": "https://facebook.com/afekunle",
+  "github": "https://github.com/afeexclusive",
+  "linkedin": "https://www.linkedin.com/in/ayokunle-afe/"
 }
 
 export const skillsSection = {
@@ -33,11 +32,11 @@ export const skillsSection = {
     subTitle: 'CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
     skills: [
       emoji(
-        '⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications'
+        '⚡ Develop highly performant Server side for your web and mobile applications'
       ),
-      emoji('⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks'),
+      emoji('⚡ Progressive Web Applications ( PWA ) in Blazor SPA Stacks'),
       emoji(
-        '⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean'
+        '⚡ Integration of third party services such as Firebase/ Azure Services / Paystack/ Flutterwave'
       ),
     ],
     
@@ -99,10 +98,10 @@ export const skillsSection = {
         skillName: 'firebase',
         fontAwesomeClassname: 'logos:firebase',
       },
-      {
-        skillName: 'python',
-        fontAwesomeClassname: 'logos:python',
-      },
+      // {
+      //   skillName: 'python',
+      //   fontAwesomeClassname: 'logos:python',
+      // },
       {
         skillName: 'git',
         fontAwesomeClassname: 'logos:git-icon',
@@ -118,95 +117,120 @@ export const skillsSection = {
 export const SkillBars = [
     {
       Stack: 'Frontend/Design', //Insert stack or technology you have experience in
-      progressPercentage: '90', //Insert relative proficiency in percentage
+      progressPercentage: '60', //Insert relative proficiency in percentage
     },
     {
       Stack: 'Backend',
-      progressPercentage: '70',
+      progressPercentage: '95',
     },
     {
       Stack: 'Programming',
-      progressPercentage: '60',
+      progressPercentage: '90',
     },
   ]
 
 export const educationInfo = [
     {
-      schoolName: 'Harvard University',
-      subHeader: 'Master of Science in Computer Science',
-      duration: 'September 2017 - April 2019',
-      desc: 'Participated in the research of XXX and published 3 papers.',
-      descBullets: [
-        'Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      ],
-    },
-    {
-      schoolName: 'Harvard',
-      subHeader: 'Master of Science in Computer Science',
-      duration: 'September 2017 - April 2019',
-      desc: 'Participated in the research of XXX and published 3 papers.',
-      descBullets: [
-        'Lorem ipsum dolor sit amet, consectetfgur adipiscing elit',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      ],
-    },
-    {
-      schoolName: 'Stanford University',
+      schoolName: 'National Open University of Nigeria',
       subHeader: 'Bachelor of Science in Computer Science',
-      duration: 'September 2013 - April 2017',
-      desc:
-        'Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...',
-      descBullets: ['Lorem ipsum dolorfdg sit amet, consectetur adipiscing elit'],
+      duration: 'Feb 2020',
+      desc: 'Design and analyze algorithms to solve programs...',
+      descBullets: [
+        'Interests At School',
+        'Object Oriented Programming',
+        'Modelling and Expert Systems',
+      ],
     },
+    {
+      schoolName: 'Federal College Of Education',
+      subHeader: 'National Cert. in Education(Physics/Computer Sci)',
+      duration: 'July 2007',
+      desc: 'High School Educator of Physics/Computer Sci.',
+      descBullets: [
+        'Interests At School',
+        'Programming(structural:GW-Basic, VB, VB.Net)',
+        'Hardware trouble shooting',
+      ],
+    }
 ]
 
 export const experience = [
   {
     role: 'Software Engineer',
-    company: 'Google',
-    companylogo: googlelogo,
-    date: 'June 2018 – Present',
+    company: 'IeTech Limited',
+    companylogo: ietechlogo,
+    date: 'Aug 2021 - Present',
     desc:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Roles',
     descBullets: [
-      'Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      'Migrating/converting .Net  Applications to cross-platform .Net core Applications',
+      'Support existing codebases and peer review code changes',
+      'Enhancing applications by identifying opportunities for improvement',
+      'Making recommendations, designing and implementing systems'
     ],
   },
   {
-    role: 'Front-End Developer',
-    company: 'Github',
-    companylogo: github,
-    date: 'May 2017 – May 2018',
+    role: 'Software Engineer',
+    company: 'ChurchPlus',
+    companylogo: churchpluslogo,
+    date: 'May 2020 – Augus 2021',
     desc:
-      'Lorem ipsum dolor sit amet, consefdctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Roles',
+    descBullets: [
+      'Maintaining and improving existing codebases and peer review code changes',
+      'Enhancing applications by identifying opportunities for improvement',
+      'Making recommendations, designing and implementing systems',
+      'Investigating and using new technologies where relevant',
+    ],
   },
   {
     role: 'Software Engineer Intern',
-    company: 'Airbnb',
-    companylogo: airbnb,
-    date: 'Jan 2015 – Sep 2015',
+    company: 'Code 360',
+    companylogo: code30logo,
+    date: 'Oct 2019 - Jan 2020',
     desc:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Roles',
+    descBullets: [
+      'Study existing Asp.Net MVC applications and optimize existing features.',
+      'Participate in solution design and breaking features into sprints',
+      'Build and maintain Desktop applications',
+      'Work with team members to deliver features in live applications',
+      'Contribute to .Net API codes for backend services'
+    ],
   },
 ]
 
 export const projects = [
   {
-    name: "lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-  },
-  {
-    name: "lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-  },
-  {
-    name: "lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    name: "ChurchPlus(API services) - Team Lead",
+    desc: "AGILE MEHTODOLOGY - One software to automate entire church management from increasing church attendance, first timer guest retention, church remittance(Paystack, Flutterwave integration), communication(Email and Personalized Bulk SMS service) to overall church administration",
     link: {
-      name: "hanzla",
-      url: "kasjfklsdjf"
+      name: "ChurchPlus",
+      url: ""
+    }
+  },
+  {
+    name: "CBN - BDC Fx Automation(API & Desktop) - Team Member",
+    desc: "A Web Application .Net Core MVC (Manages operations), API services available for desktop and mobile applications. Mobile App: Crowd Control(Covid-19 requirement). Desktop App: Biometric capture and payout verification with POS printing",
+    link: {
+      name: "Not Public",
+      url: ""
+    }
+  },
+  {
+    name: "POS Error Log Analysis Application - Single",
+    desc: "API services available for any client technology to display the log errors in thier various critical levels and archive logs at user defined periods",
+    link: {
+      name: "Log Analyzer",
+      url: ""
+    }
+  },
+  {
+    name: "Waka - Team Lead",
+    desc: "API services that drives a mobile app which helps people navigate public places in Lagos. Provides users with front view pictures, connect to google map to drive to the location, office phone numbers etc",
+    link: {
+      name: "Play Store",
+      url: ""
     }
   }
 ]

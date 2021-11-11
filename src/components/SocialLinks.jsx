@@ -9,32 +9,22 @@ const SocialLinks = () => {
         <div className="btn-wrapper text-lg">
             <Button
                   className="btn-icon-only rounded-circle"
+                  //color="twitter"
+                  href={socialLinks.gmail}
+                  target="_blank"
+                >
+                  <span className="btn-inner--icon">
+                    <i className="fa fa-envelope" />
+                  </span>
+                </Button>
+                <Button
+                  className="btn-icon-only rounded-circle ml-1"
                   color="twitter"
-                  href={socialLinks.twitter}
+                  href={socialLinks.linkedin}
                   target="_blank"
                 >
                   <span className="btn-inner--icon">
-                    <i className="fa fa-twitter" />
-                  </span>
-                </Button>
-                <Button
-                  className="btn-icon-only rounded-circle ml-1"
-                  color="facebook"
-                  href={socialLinks.facebook}
-                  target="_blank"
-                >
-                  <span className="btn-inner--icon">
-                    <i className="fa fa-facebook-square" />
-                  </span>
-                </Button>
-                <Button
-                  className="btn-icon-only rounded-circle ml-1"
-                  color="instagram"
-                  href={socialLinks.instagram}
-                  target="_blank"
-                >
-                  <span className="btn-inner--icon">
-                    <i className="fa fa-instagram" />
+                    <i className="fa fa-linkedin" />
                   </span>
                 </Button>
                 <Button
@@ -49,14 +39,24 @@ const SocialLinks = () => {
                 </Button>
                 <Button
                   className="btn-icon-only rounded-circle ml-1"
-                  color="twitter"
-                  href={socialLinks.linkedin}
+                  color="facebook"
+                  href={socialLinks.facebook}
                   target="_blank"
                 >
                   <span className="btn-inner--icon">
-                    <i className="fa fa-linkedin" />
+                    <i className="fa fa-facebook-square" />
                   </span>
                 </Button>
+                {/* <Button
+                  className="btn-icon-only rounded-circle ml-1"
+                  color="instagram"
+                  href={socialLinks.instagram}
+                  target="_blank"
+                >
+                  <span className="btn-inner--icon">
+                    <i className="fa fa-instagram" />
+                  </span>
+                </Button> */}
         </div>
      );
 }

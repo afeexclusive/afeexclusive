@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Afe Ayokunle (@afeexclusive)
-- 👀 I’m interested in .Net technologies
+- 👀 I’m interested in .Net technologies, Data Analysis
 - 🌱 I’m currently learning a lot in the tech space
 - 💞️ I’m looking to collaborate on open source projects
 - 📫 I am reachable at afeexclusive@gmail.com
